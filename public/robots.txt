@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.amphio.co/sitemap.xml
+Sitemap: https://www.samuelholyhead.com/sitemap.xml

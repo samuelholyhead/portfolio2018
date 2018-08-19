@@ -796,6 +796,7 @@ ol {
     overflow: auto;
     transition: all 0.3s ease;
     box-sizing: border-box;
+    float: left;
 }
 
 .cs_caseStudyCard:last-of-type {
@@ -927,6 +928,7 @@ ol {
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-top: 0px!important;
 }
 
 .cs_contactFormCopyCont {position: relative;}
@@ -937,6 +939,7 @@ ol {
     height: 40px;
     line-height: 38px;
     border: none;
+    border-right: solid 1px #ffffff;
     border-radius: 4px 0 0 4px;
     background: #ffffff;
     color: #000519;

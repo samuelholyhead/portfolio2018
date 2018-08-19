@@ -50,7 +50,8 @@
                 <img class="g_navBarLogo" src="./img/sh-logo.svg" alt="Amphio"/>
                 <img class="g_navBarLogomark" src="./img/sh-logo-mark.svg" alt="Amphio"/>
             </a>
-            <a class="g_navBarLink" href="about.html">About Me</a>
+            <a class="g_navBarLink showMobile" href="iop-events.html#get-in-touch-mobile">Get In Touch</a>
+            <a class="g_navBarLink hideMobile" href="iop-events.html#get-in-touch">Get In Touch</a>
             <a class="g_navBarLink" href="index.html#our-work">My Work</a> 
         </div>
         
@@ -81,6 +82,7 @@
                     </div>
 
                     <div class="cs_contactFormCont hideMobile">
+                        <a name="get-in-touch"></a>
                         <h4 class="cs_contactFormTitle">Interesting in working together?</h4>
                         <p>For enquiries about design or engineering work or if you would just like chat, get in touch via email or phone!</p>
                         <h5>Email</h5>
@@ -103,27 +105,27 @@
                 <div class="cs_articleContainer">
                     <div class="cs_mainTitle animateIn hideMobile">Institute of Physics Events: A flagship project to teach agile development</div>
 
-                    <p>The Institute of Physics are a membership organisation aiming to help advance of the physics. They started working with us to help them become more digitally focused as an organisation.</p>
+                    <p>The Institute of Physics are a membership organisation aiming to help the advancement of physics. They started working with us to help them become more digitally focused as an organisation.</p>
 
-                    <p>After identifying in that we wanted to improve member engagement with events through our design sprints we set out to run a series of two week long development sprints based on the Scrum methodology.</p>
+                    <p>After running several design sprints we identified that in that we wanted to improve member engagement with events by building an events system for members. We decided to run a series of two week long development sprints based on the Scrum methodology.</p>
 
-                    <p>We included IOP staff members in the process so they would get to grips with working in an agile way and also so they get to work through problems alongside us that they would probably encounter in any future digital projects they took part in.</p>
+                    <p>We included IOP staff members in the process so they would get to grips with working in an agile way and also so they got to work through many problems alongside us that they would probably encounter in any future digital projects they took part in.</p>
 
-                    <p>My role within these generally fell into UI/UX design, testing proposed designs with high-fidelity prototypes and then implementing the web front-end (HTML rendered from Clojure, CSS and some JS).</p>
+                    <p>My role within these generally fell into UI/UX design, testing proposed designs with high-fidelity prototypes and then implementing the web front-end (a server-side app written in Clojure which renders down to HTML, CSS and  JS).</p>
 
                     <h4>Sprint 1: Event detail pages</h4>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/eventPage.jpg" alt="A user creating an event on the IOP system" title="A user creating an event on the IOP system"/>
 
-                    <p>Our first focus was on the detail pages for the events themselves. Design-wise the aim for these pages was to be clear and clean on any device. To this end they were designed mobile first and implemented responsively.</p>
+                    <p>Our first focus was on the detail pages for the events themselves. Design-wise the aim for these pages was to be clear and clean on any device. To this end they were designed mobile first and implemented to be responsive.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/metatags.jpg" alt="The event page preview on facebook messenger" title="The event page preview on facebook messenger"/>
 
-                    <p>The other important factor for these pages is that we wanted them to be as shareable as possible, so I spend a lot of time implementing all the proper metatag information used by platforms like Facebook, Twitter, etc for their previews. We also put in a feature where anyone could quickly copy the link to these pages to their clipboard to make them easily shareable.</p>
+                    <p>The other important factor was that we wanted these events to be shared a lot, so I spend a lot of time implementing all the proper metatag information used by platforms like Facebook, Twitter, etc for their page previews. We also put in a feature where anyone could quickly copy the link to these pages to their clipboard to make it faster for users to share them on whatever platforum they wanted.</p>
 
                     <h4>Sprint 2: Event discovery pages</h4>
 
-                    <p>Once we had the pages we felt like the next thing we had to do was give them a home to live in. As the amount of events in future never tended to be more than 150 we decided to display them in a time sorted list and let users search through them if they specifically knew what they were  looking for.</p>
+                    <p>Once we had the detail pages the next aim was to give them a home to live in. As the amount of future events never tended to be over 150 we decided to display them in a time sorted list and provide powerful search to let users quickly find events they were looking for.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/discovery-page.png" alt="The top of the event discovery page" title="The top of the event discovery page"/>
 
@@ -135,11 +137,11 @@
 
                     <h4>Sprint 3: Event Creation</h4>
 
-                    <p>During our user interviews in the design sprints we had discovered that some people who held physics events didn’t even know you could have the IOP advertise your event. Due to this we decided to make anyone able to add an event to the new system supported by features like ReCAPTCHA and ‘Report as Spam’ to help moderators defend again spam events.</p>
+                    <p>During our user interviews in the design sprints we had discovered that some people who held physics events didn’t even know you could have the IOP advertise your event. Due to this we decided to let anyone add an event to the new system. We added features like ReCAPTCHA and ‘Report as Spam’ to help moderators defend again spam events.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/eventCreation.jpg" alt="A user creating an event on the IOP system" title="A user creating an event on the IOP system"/>
 
-                    <p>IOP members hold a wide range of events from week long conferences to small group days out. This led to design decisions like integrating a WYSIWYG editor, custom images and tags that would let users customise their event pages to fit their event.</p>
+                    <p>IOP members hold a wide range of events from week long conferences to small group days out. This led to design decisions like integrating a WYSIWYG editor, custom images and tags that would let users customise their event pages to fit any kind of event.</p>
 
                     <p>Later sprints involving adding functionality for registration, administration controls, preparation for GDPR and further spam defence.</p>
 
@@ -149,9 +151,9 @@
 
                     <a href="./img/iop-events/ui-kit.jpg" ><img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/ui-kit.jpg" alt="The IOP UI kit" title="The IOP UI kit"/></a>
 
-                    <p>To help align designers working on future IOP digital projects I created a live UI kit. This is a style guide containing both basic elements such as type, colours but also more advanced modules and flows such as navigation bars, data capture forms for different kinds of data, etc.</p>
+                    <p>To help align designers working on future IOP digital projects I created a UI kit. This is a style guide containing both basic elements such as type, colours but also more advanced modules and flows such as navigation bars, data capture forms for different kinds of data, etc.</p>
 
-                    <p>To avoid this becoming a old document that is forgotten about I opted to make a it a sketch file hosted on GitHub so that designers can copy elements from it into their own designs, making consistency easier. We established a rule where new elements can’t be added to the kit unless they have been implemented and tested to ensure quality.</p>
+                    <p>To avoid this becoming another document that is forgotten about, I opted to make a it a sketch file hosted on GitHub so that designers can copy elements from it into their own designs. We established a rule where new elements couldn’t be added to the kit unless they have been implemented and tested to ensure everything in the kit was of quality.</p>
 
                     
                     <div>
@@ -167,6 +169,7 @@
                     </div>
                     
                     <div class="cs_contactFormCont showMobile">
+                        <a name="get-in-touch-mobile"></a>
                         <h4 class="cs_contactFormTitle">Interesting in working together?</h4>
                         <p>For enquiries about design or engineering work or if you would just like chat, get in touch via email or phone!</p>
                         <h5>Email</h5>
@@ -191,7 +194,7 @@
 
         <div class="footerCont">
             <p>© 2018 Samuel Holyhead. All rights reserved.</p>
-            <p>This website has been build according to the principles of Progressive Enchancement. It collects no personal information neither passes on personal information to any third party services.</p>
+            <p>This website has been build according to the principles of Progressive Enchancement. It collects no personal information, nor does it pass on your personal information to any third party services.</p>
             <p>Typeset in <a href="http://sorkintype.com/fonts.html#mw">Merriweather</a> and <a href="https://www.google.com/get/noto/">Noto Sans</a>.</p>
         </div>
     </body>
