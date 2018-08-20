@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.samuelholyhead.com/sitemap.xml
+Sitemap: https://samuelholyhead.com/sitemap.xml

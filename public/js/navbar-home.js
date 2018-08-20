@@ -27,12 +27,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("navBar").style.top = st + "px";
           }
        		document.getElementById("navBar").style.position = "absolute";
-          document.getElementById("navBar").classList.remove("animateNavIn");
+
+          if ((document.getElementById("navBar").offsetTop + document.getElementById("navBar").clientHeight) < st) {
+            document.getElementById("navBar").classList.remove("animateNavIn");
+          }
    		} else {
           //Scroll up
-          document.getElementById("navBar").classList.add("animateNavIn");
-          document.getElementById("navBar").style.top = "0px";
-      		document.getElementById("navBar").style.position = "fixed";
+          if (((document.getElementById("navBar").offsetTop + document.getElementById("navBar").clientHeight) < st) 
+              || document.getElementById("navBar").offsetTop > st) 
+          {
+            if (document.getElementById("navBar").offsetTop != st) {
+              document.getElementById("navBar").classList.add("animateNavIn");
+            }
+            document.getElementById("navBar").style.top = "0px";
+            document.getElementById("navBar").style.position = "fixed";
+          }
    		}
    	  lastScrollTop = st;
 	};
