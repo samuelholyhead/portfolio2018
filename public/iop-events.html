@@ -27,12 +27,12 @@
         <meta property="og:description" content="Sam Holyhead is a London-based UX & UI designer and front-end developer. A case study about building the Institute of Physics Events site and teaching agile processes along the way.">
         <meta name="twitter:description" value="Sam Holyhead is a London-based UX & UI designer and front-end developer. A case study about building the Institute of Physics Events site and teaching agile processes along the way.">
         <!-- URL -->
-        <meta name="og:url" content="http://www.samuelholyhead.com/iop-events.html">
+        <meta property="og:url" content="http://www.samuelholyhead.com/iop-events.html">
         <meta name="twitter:url" value="http://www.samuelholyhead.com/iop-events.html">
         <!-- Site Name -->
-        <meta name="og:site_name" content="Samuel Holyhead">
+        <meta property="og:site_name" content="Samuel Holyhead">
         <!-- Image -->
-        <meta name="og:image" content="http://www.samuelholyhead.com/img/iop-events/homeHeader.jpg">
+        <meta property="og:image" content="http://www.samuelholyhead.com/img/iop-events/homeHeader.jpg">
         <meta name="twitter:image" content="http://www.samuelholyhead.com/img/iop-events/homeHeader.jpg">
         
         <meta name="twitter:card" content="summary_large_image">
@@ -109,33 +109,33 @@
                 <div class="cs_articleContainer">
                     <div class="cs_mainTitle animateIn hideMobile">Institute of Physics Events: A flagship project to teach agile development</div>
 
-                    <p>The Institute of Physics are a membership organisation aiming to help the advancement of physics. They started working with us to help them become more digitally focused as an organisation.</p>
+                    <p>The IOP are a scientific charity that promote the advancement of physics. Their overall aim was to become a more digitally focussed organisation.</p>
 
-                    <p>After running several design sprints we identified that in that we wanted to improve member engagement with events by building an events system for members. We decided to run a series of two week long development sprints based on the Scrum methodology.</p>
+                    <p>We ran several design sprints, that identified a need to improve member engagement through an events discovery system. A series of two-week development sprints followed, which we based on the ‘Scrum methodologyʼ.</p>
 
-                    <p>We included IOP staff members in the process so they would get to grips with working in an agile way and also so they got to work through many problems alongside us that they would probably encounter in any future digital projects they took part in.</p>
+                    <p>By working closely with our team, IOP staff members learned best practices for software development and agile methodology. This would allow them to capably manage and deliver future digital projects.</p>
 
-                    <p>My role within these generally fell into UI/UX design, testing proposed designs with high-fidelity prototypes and then implementing the web front-end (a server-side app written in Clojure which renders down to HTML, CSS and  JS).</p>
+                    <p>My responsibilities were UX &amp; UI design, testing proposed features with high-fidelity prototypes and front-end development for the server-side web app (written in Clojure).</p>
 
                     <h4>Sprint 1: Event detail pages</h4>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/eventPage.jpg" alt="A user creating an event on the IOP system" title="A user creating an event on the IOP system"/>
 
-                    <p>Our first focus was on the detail pages for the events themselves. Design-wise the aim for these pages was to be clear and clean on any device. To this end they were designed mobile first and implemented to be responsive.</p>
+                    <p>We began with the event detail pages themselves, which needed to be clear on any device. To this end, they were designed mobile first, and then implemented to reflow responsively across all devices.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/metatags.jpg" alt="The event page preview on facebook messenger" title="The event page preview on facebook messenger"/>
 
-                    <p>The other important factor was that we wanted these events to be shared a lot, so I spend a lot of time implementing all the proper metatag information used by platforms like Facebook, Twitter, etc for their page previews. We also put in a feature where anyone could quickly copy the link to these pages to their clipboard to make it faster for users to share them on whatever platforum they wanted.</p>
+                    <p>Our aim was to make all IOP events easily sharable, so inputting all of the metadata used by major messaging platforms was integral to this. Additionally, we added a feature to enable page links to be quickly copied to the userʼs clipboard, allowing for even easier sharing.</p>
 
                     <h4>Sprint 2: Event discovery pages</h4>
 
-                    <p>Once we had the detail pages the next aim was to give them a home to live in. As the amount of future events never tended to be over 150 we decided to display them in a time sorted list and provide powerful search to let users quickly find events they were looking for.</p>
+                    <p>Once the event pages were completed, we focussed on the environment to display them in. The maximum number of upcoming IOP events never exceeded 150, so we chose a chronological list with powerful search, enabling users to efficiently find events.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/discovery-page.png" alt="The top of the event discovery page" title="The top of the event discovery page"/>
 
-                    <p>The IOP aim to enhance physics for all so to that end we wanted to build the site in the most accessible way possible. To that end we started designing and implementing the site according to the Progressive Enhancement principles.</p>
+                    <p>To ensured the service was accessible to all IOP members we built it according to the principles of ‘Progressive Enhancementʼ.</p>
 
-                    <p>These state that a page must be functional as pure HTML without any styling from CSS or extra Javascript functionality. Next the page can be dressed in CSS but all its functions should work without Javascript. This ensures that even if you are in the middle of the highlands with intermitant internet the pages should still be usable. The image below shows the site loaded without CSS and JS.</p>
+                    <p>These ensure that the users basic needs can be achieved in pure HTML. Then styling and extra interactivity (CSS and Javascript) are built after. This ensures the page is always usable even in the event of poor internet connection or loading failures. The image below shows the HTML only site.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/discovery-page-html-only.png" alt="The discovery page HTML only" title="The discovery page HTML only"/>
 
@@ -143,32 +143,37 @@
 
                     <p>During our user interviews in the design sprints we had discovered that some people who held physics events didn’t even know you could have the IOP advertise your event. Due to this we decided to let anyone add an event to the new system. We added features like ReCAPTCHA and ‘Report as Spam’ to help moderators defend again spam events.</p>
 
+                    <p>Based on the findings of our initial stakeholder interviews, we allowed any user to add events to the new system, alongside preventative features like ReCAPTCHA and spam reporting to help moderators remove fake events.</p>
+
                     <img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/eventCreation.jpg" alt="A user creating an event on the IOP system" title="A user creating an event on the IOP system"/>
 
                     <p>IOP members hold a wide range of events from week long conferences to small group days out. This led to design decisions like integrating a WYSIWYG editor, custom images and tags that would let users customise their event pages to fit any kind of event.</p>
 
-                    <p>Later sprints involving adding functionality for registration, administration controls, preparation for GDPR and further spam defence.</p>
+                    <p>These events spanned from week-long conferences to smaller days out. This informed our decision to integrate a WYSIWYG editor, custom images and tags to allow users to fully personalise events.</p>
 
-                    <h4>Service manual: Scaling these principles</h4>
+                    <p>Later sprints involved adding registration, administration controls, GDPR compliance and further spam protection.</p>
 
-                    <p>While including IOP staff members on a live project with us worked well we needed to record all these learnings for future IOP digital projects we aren’t building ourselves. To solve this we started work on a digital service manual for the whole organisation.</p> 
+                    <h4>Service manual: Scaling these lessons</h4>
+
+                    <p>To record our learnings and progress, we produced a digital service manual for the whole organisation. IOP staff would be able to use this for any projects moving forward.</p> 
 
                     <a href="./img/iop-events/ui-kit.jpg" ><img class="cs_articleFullWidthImg animateFade" src="./img/iop-events/ui-kit.jpg" alt="The IOP UI kit" title="The IOP UI kit"/></a>
 
-                    <p>To help align designers working on future IOP digital projects I created a UI kit. This is a style guide containing both basic elements such as type, colours but also more advanced modules and flows such as navigation bars, data capture forms for different kinds of data, etc.</p>
+                    <p>Part of this manual was a style guide, or ‘UI Kitʼ to help align designers working with the IOP in future. This contained basic elements such as type and colours, plus advanced modules and flows like navigation bars, data capture forms, etc.</p>
 
                     <p>To avoid this becoming another document that is forgotten about, I opted to make a it a sketch file hosted on GitHub so that designers can copy elements from it into their own designs. We established a rule where new elements couldn’t be added to the kit unless they have been implemented and tested to ensure everything in the kit was of quality.</p>
 
-                    
+                    <p>We created it as a sketch file hosted on GitHub, enabling designers to copy elements from it into their own designs, and guaranteeing anyone can access the latest version. Elements cannot be added to the kit unless they have been implemented and tested to ensure quality.</p>
+
                     <div>
-                        <a class="cs_caseStudyCard" href="iop-sprints.html">
-                            <h5 class="cs_caseStudyCardTitle">Previous</h5>
-                            <p class="cs_caseStudyCardSubtitle">Running design sprints with the  Institute&nbsp;of&nbsp;Physics</p>
-                        </a>
-    
                         <a class="cs_caseStudyCard" href="henle.html">
                             <h5 class="cs_caseStudyCardTitle">Next</h5>
                             <p class="cs_caseStudyCardSubtitle">Redesigning The Henle Library for&nbsp;Android</p>
+                        </a>
+
+                        <a class="cs_caseStudyCard" href="iop-sprints.html">
+                            <h5 class="cs_caseStudyCardTitle">Previous</h5>
+                            <p class="cs_caseStudyCardSubtitle">Running design sprints with the  Institute&nbsp;of&nbsp;Physics</p>
                         </a>
                     </div>
                     

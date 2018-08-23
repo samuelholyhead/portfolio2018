@@ -787,7 +787,7 @@ ol {
 
 .cs_caseStudyCard {
     display: block;
-    margin: 36px 0 12px 0;
+    margin: 0 0 12px 0;
     width: 100%;
     min-height: 100px;
     background: #ffffff;
@@ -796,11 +796,11 @@ ol {
     overflow: auto;
     transition: all 0.3s ease;
     box-sizing: border-box;
-    float: left;
+    float: right;
 }
 
-.cs_caseStudyCard:last-of-type {
-    margin: 0 0 12px 0;
+.cs_caseStudyCard:first-of-type {
+    margin: 36px 0 12px 0;
     text-align: right;
 }
 
@@ -1181,11 +1181,11 @@ ol {
 
     .cs_caseStudyCard {
         display: inline-block;
-        margin: 36px 7px 12px 0;
+        margin: 36px 12px 12px 0;
         width: calc(50% - 6px);
     }
     
-    .cs_caseStudyCard:last-of-type {margin: 36px 0 12px 0;}
+    .cs_caseStudyCard: first-of-type {margin: 36px 0 12px 0;}
 
 
 @media only screen and (min-width: 663px) {
