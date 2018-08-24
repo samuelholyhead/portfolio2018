@@ -109,27 +109,27 @@
                 <div class="cs_articleContainer">
                     <div class="cs_mainTitle animateIn hideMobile">Redesigning the Henle Library for Android</div>
 
-                    <p>G. Henle Verlag are sheet music publishers who specialise in publishing Urtext scores. These scores are considered to be the closest to the intended vision of the original composer and are the result of hours of research through the many different transciptions of the sheet music that have been written over the years.</p>
+                    <p>G. Henle Verlag are sheet music publishers specialising in Urtext scores. Considered to be the closest to the original composerʼs intended vision, they are the result of comprehensive research into classical music transcripts.</p>
 
                     <video class="cs_articleFullWidthVideo animateFade" preload controls poster="./video/henle/trailerposter.jpg" controlsList="nodownload"><source src="./video/henle/henle-trailer.mp4" type="video/mp4">Your browser doesn‘t support HTML5 video</video>
 
-                    <p>With the introduction of the iPad, Henle wanted to start providing their scores to their customers digitally. Not content with just mirroring their physical counterparts, Henle wanted to take advantage of these new techonologies to improve interactivity, portability and flexibility for the musician.</p>
+                    <p>Henle aimed to begin providing scores to their customers digitally. They wanted to take advantage of new technology to make their content more interactive and flexible for musicians.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/henle/henle-score.jpg" alt="Using The Henle Library on iPad Pro with Apple Pencil" title="Using The Henle Library on iPad Pro with Apple Pencil"/>
 
-                    <p>The result was the Henle Library, both an advanced score reader and an online store for Henle’s customers to purchase Urtext scores. After the success of the iOS app Henle decided to develop an Android version to make the app avaible to a wider audience. I was tasked with re-designing the app to feel natural to an Android user.</p>
+                    <p>The resulting ‘Henle Libraryʼ served as both an advanced score reader and an online store for customers to purchase Urtext scores. Following the iOS appʼs success, Henle wanted a version that was Android compatible, to make the Library available to a wider audience.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/henle/danielhope.jpg" alt="Daniel Hope using The Henle Library" title="Daniel Hope using The Henle Library"/>
 
-                    <p>One of the major aims was to try and align the app closer to Google’s material design guidelines so that Android users would have an experience closer to the the apps they normally use. The most obvious example of this was combining the navigation bar and bottom bar into one action bar as the guidelines at that point discouraged the use of bottom bars as they conflicted with the three navigation buttons on the device.</p>
+                    <p>To achieve this, I aligned the designs more towards Googleʼs material design guidelines. This ensured the appʼs user experience would feel familiar to Android users. For example, we combined the navigation and bottom bar into one action bar, to avoid conflicting with the three hardware buttons on the bottom of most Android devices.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/henle/side-by-side.png" alt="iOS and Android layouts" title="iOS and Android layouts"/>
 
-                    <p>Another issue that we encounted is that the store and library on iOS used a tab switcher to switch between the two modes. Unfortunately Android’s stack based memory management system doesn’t easily allow for this kind of parallel page management.</p>
+                    <p>Another issue that we encounted is that the store and library on iOS used a tab switcher to change between the two modes. Unfortunately Android’s stack based memory management system doesn’t easily allow for this kind of parallel page management.</p>
 
                     <img class="cs_articleFullWidthImg animateFade" src="./img/henle/action-bar.jpg" alt="Custom action bar" title="Custom action bar"/>
 
-                    <p>To work around this we created a custom action bar featuring a tab switcher at the home level of the store and the library, then if the user navigated deeper the tab switcher was replaced with the traditional back button which let the user navigate back up the stack to the home level where they could switch.</p>
+                    <p>IIn response to this we created a custom action bar. This featured a tab switcher which replaced the standard ‘Backʼ button and page title when the user was at the top-level of the store or library to allow users to switch between the two modes. When the users navigate forward to lower-level pages the traditional ‘Backʼ button and page title return.</p>
                     <div>
                         <a class="cs_caseStudyCard" href="flv.html">
                             <h5 class="cs_caseStudyCardTitle">Next</h5>
