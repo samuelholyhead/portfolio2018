@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	console.log("home-header.js DOMContentLoaded");
 	document.getElementById("headerText").innerHTML = "";
-	typeString("What are you looking for?");
+	typeString("Welcome, what are you looking for?");
 
   	let deg = 135
   	let tick = () => {
@@ -18,6 +18,6 @@ function typeString(str) {
   for (var i = 0; i < arr.length; i++) {
     setTimeout(function(x) { return function () {
       document.getElementById("headerText").innerHTML = document.getElementById("headerText").innerHTML + arr[x];
-    }; }(i), 50*i);
+    }; }(i), 48*i);
   }
 }
