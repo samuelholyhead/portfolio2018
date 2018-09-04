@@ -711,14 +711,16 @@ ol {
     margin: 12px 0 12px 12px;
 }
 
-.ap_cvBlock:hover {transform: translateY(-2px);}
+.ap_cvBlock:hover {
+    transform: translateY(-2px);
+    text-decoration: none!important;
+}
 
 .ap_cvLink {
     width: 50%;
     margin: 0 auto;
     background: #ffffff;
     border-radius: 4px;
-    overflow: hidden;
     display: block;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px 0 #E6E5E9;
@@ -726,7 +728,6 @@ ol {
 
 .ap_cvBlock:hover .ap_cvLink {
     box-shadow: 0 4px 4px 0 #E6E5E9;
-    text-decoration: none; 
 }
 
 .ap_cvLink img {
@@ -745,11 +746,7 @@ ol {
     margin-top: 8px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: all 0.3s ease
-}
-
-.ap_cvBlock:hover .ap_cvLabel, .ap_cvLabel:hover; {
-    text-decoration: none!important;
+    transition: all 0.3s ease;
 }
 
 .ap_h2 {margin-bottom: 48px}
