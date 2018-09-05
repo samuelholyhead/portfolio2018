@@ -5,3 +5,9 @@
 /out
 .*.DS_Store
 
+.cache
+#cache
+/.cache
+.*.cache
+
+
