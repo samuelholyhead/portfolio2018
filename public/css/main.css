@@ -469,6 +469,11 @@ ol {
     animation-delay: 2.3s;
 }
 
+.hp_headerButton:nth-of-type(8) {
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+
 .hp_headerButton:hover {
     background: #ffffff;
     color: #FC5A68;
@@ -769,7 +774,7 @@ ol {
 
 .ap_quoteRight {
     text-align: right;
-    margin: 48px 12px 0 0;
+    margin: 48px 12px 48px 0;
 }
 
 .g_alignRight {
@@ -857,6 +862,13 @@ ol {
     margin: 12px -12px 24px -12px;
     border-radius: 0px;
     background: #000000;
+}
+
+.cs_article75WidthVideo {
+    position: relative;
+    width: calc(100% + 24px);
+    margin: 12px -12px 24px -12px;
+    border-radius: 0px;
 }
 
 .cs_articleFullWidthYoutubeVideo {
@@ -1291,6 +1303,14 @@ ol {
     }
     
     .cs_caseStudyCard: first-of-type {margin: 36px 0 12px 0;}
+
+    .cs_article75WidthVideo {
+        width: 75%;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 12px 0 24px 0;
+    }
+
 
 
 @media only screen and (min-width: 663px) {
