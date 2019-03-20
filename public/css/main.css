@@ -714,7 +714,7 @@ ol {
 }
 
 .ap_blockMargins {
-    margin: 96px 0;
+    margin: 48px 0;
     display: block;
     height: auto;
     overflow: auto;
@@ -1351,6 +1351,8 @@ ol {
         width: 100%;
         margin: 0;
     }
+
+    .ap_blockMargins {margin: 96px 0;}
 }
 
 
