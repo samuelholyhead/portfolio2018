@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	window.onscroll= function() {
    		var st = window.pageYOffset || document.documentElement.scrollTop; 
+      var bottom = document.body.scrollHeight - window.innerHeight - 10;
 
       if (st <= 450) {
         document.getElementById("navBar").style.backgroundImage = ("none");
@@ -33,14 +34,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }
    		} else {
           //Scroll up
-          if (((document.getElementById("navBar").offsetTop + document.getElementById("navBar").clientHeight) < st) 
-              || document.getElementById("navBar").offsetTop > st) 
-          {
-            if (document.getElementById("navBar").offsetTop != st) {
-              document.getElementById("navBar").classList.add("animateNavIn");
+
+          if (st <= bottom) {
+            // Not past the bottom of the page
+            if (((document.getElementById("navBar").offsetTop + document.getElementById("navBar").clientHeight) < st) 
+                || document.getElementById("navBar").offsetTop > st) 
+            {
+              if (document.getElementById("navBar").offsetTop != st) {
+                document.getElementById("navBar").classList.add("animateNavIn");
+              }
+              document.getElementById("navBar").style.top = "0px";
+              document.getElementById("navBar").style.position = "fixed";
             }
-            document.getElementById("navBar").style.top = "0px";
-            document.getElementById("navBar").style.position = "fixed";
           }
    		}
    	  lastScrollTop = st;

@@ -812,7 +812,7 @@ ol {
 
 .cs_page {
     width: 100%;
-    margin-top: 69vw;
+    margin-top: 50vh;
     padding-bottom: 48px;
     background-color: #FCFBFD;
     position: relative;
@@ -848,8 +848,7 @@ ol {
 
 .cs_headerImage {
     width: 100%;
-    height: 70vw;
-    max-height: 560px;
+    height: 51vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -1350,6 +1349,13 @@ ol {
 
     .hp_teamCont:nth-child(2n + 1) {margin-right: 0;}
 
+    .cs_page {margin-top: 460px;}
+
+    .cs_headerImage { 
+        height: 70vw;
+        max-height: 560px;
+    }
+
     .cs_mainTitle {padding: 48px 0px 24px 0;}
 
     .ap_66block {
@@ -1438,10 +1444,6 @@ ol {
     .ap_cvBlock {width: calc(25% - 18px);}
 
     /* Case study pages */
-
-    .cs_page {margin-top: 460px;}
-
-    .cs_headerImage {height: 70vw;}
 
     .cs_sidebarFacts {margin-bottom: 0px;}
 
