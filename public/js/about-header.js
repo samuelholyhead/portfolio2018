@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	console.log("home-header.js DOMContentLoaded");
 	document.getElementById("headerText").innerHTML = "";
-	typeString("What would you like know about me?");
+	setTimeout(function(){ typeString("What would you like know?"); }, 300);
 
   	let deg = 135
   	let tick = () => {
