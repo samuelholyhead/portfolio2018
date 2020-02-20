@@ -102,6 +102,10 @@ textarea {
 
 .hideMobile {display: none!important;}
 
+.hideSmallMobile {display: none!important;}
+
+.showSmallMobile {display: block!important;}
+
 .g_navBar {
     position: absolute;
     top: 0;
@@ -1360,9 +1364,9 @@ ol {
 
 @media only screen and (min-width: 480px) {
 
-    .hideSmallMobile {display: block;}
+    .hideSmallMobile {display: block!important;}
 
-    .showSmallMobile {display: none;}
+    .showSmallMobile {display: none!important;}
 
     .g_navBarLogo {display: block!important;}
 
@@ -1510,10 +1514,6 @@ ol {
     .showMobile {display: none!important;}
 
     .hideMobile {display: inline-block!important;}
-
-    .hideSmallMobile {display: none!important;}
-
-    .showSmallMobile {display: block!important;}
 
     .cs_headerImage {height: 60vw;}
 
