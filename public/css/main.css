@@ -1114,7 +1114,7 @@ ol {
 
 .cs_prototypeCont {
     display: none;
-    margin: -48px 0;
+    margin: -56px 0;
     position: relative;
     width: 399px;
     height: 805px;
@@ -1360,7 +1360,9 @@ ol {
 
 @media only screen and (min-width: 480px) {
 
-    .hideSmallMobile {display: inline-block;}
+    .hideSmallMobile {display: block;}
+
+    .showSmallMobile {display: none;}
 
     .g_navBarLogo {display: block!important;}
 
@@ -1508,6 +1510,10 @@ ol {
     .showMobile {display: none!important;}
 
     .hideMobile {display: inline-block!important;}
+
+    .hideSmallMobile {display: none!important;}
+
+    .showSmallMobile {display: block!important;}
 
     .cs_headerImage {height: 60vw;}
 
