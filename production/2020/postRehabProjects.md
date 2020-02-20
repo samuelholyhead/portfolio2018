@@ -30,9 +30,10 @@
 --
 
 
-- Product UX (Facebook or HSBC)
-- Voice (MaxQ or Roche)
+- Product UX (Facebook* or HSBC or Nike*)
+- Voice (Roche/)
 - Sprints and prototyping (Design Sprints with IOP) 
+- Teaching UX (User testing session)
 - UI (Barefoot World Atlas)
 - UI and Android (Henle)  
 - Illustration/UI (FLV)

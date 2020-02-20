@@ -29,44 +29,14 @@
 	- Audit existing site for improvements
 		- Update case studies
 			- Format update?  
-		- Update worked with clients list
-			- To Seperate agencies and clients or not (?)
-			- Amend design to account for more clients
-			- New clients
-				1. Google
-				- Nike 
-				- Facebook
-				- Warner
-				- HSBC
-				- Roche
-				- Colgate
-				- Henle
-				- BBC
-				- Foundation Louis Vuitton
-				- British Museum
-				- Faber
-				- Juilliard
-				- Dazed
-				- NHS
-				- IOP
-				- Comic Relief
-				- Barefoot Books
-				- NatureGuides
-				- South India Coffee Company
-				- Rehab
-				- Touchpress
-				- Amphio
-				- Tengio
 		- Copy audit
 			- Update bio to be less cringe 
 			- less mechanical generally?
 		- Fix mobile functionality for contact sections
-		- Make header image larger on mobile (showcase more visuals)
 		- How might we make it more visually delightful
 			- Update card style
 			- Improve header on home page 
 		- Desktop spacing on case study titles 
-		- Fix header showing when page hits bottom
 		- Improve end CTA
 		- Improve Mobile h1 styles
 		- iPhone X container width
@@ -76,3 +46,17 @@
 I am a freelance UX/UI designer & front-end developer, previous working with digital agencies such as Rehab, Touchpress and Amphio on projects with Google, Nike, Facebook and . I also work directly with clients such Barefoot Books, the NHS, and Comic Relief. Additionally, I am an Associate Lecturer on the BA (Hons) Graphic Design course at Sheffield Hallam University.
 
 Experienced at working across the product development cycle; from design thinking and research, validating ideas through user-testing prototypes, high-fidelity interface design and front-end implementation of web apps and sites.
+
+## Profile
+
+### One liner
+
+Freelance UX/UI designer and Associate Graphic Design Lecturer at Sheffield Hallam University 
+
+### Cover letter
+
+I’m a UX/UI designer who recently completed a 14 month contract at the creative technology company Rehab, working with clients such as Google, Nike Facebook, HSBC. I worked across the product development cycle starting with discovery phases and design sprints to understand and define what we should be creating, testing prototypes with our users to verify our concept before then building the product, which ranged from voice assistants and web apps to native apps and D-apps.
+
+Before that I worked at Amphio and Tengio both as a designer but also as a front-end developer, working on React web apps, native Android apps and also Cross-platform apps built with Flutter.
+
+Additionally, I also lecture on the BA (Hons) Graphic Design course, tutoring a group of final year students as well as running UX workshops and digitally focused briefs.

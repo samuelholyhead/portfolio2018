@@ -287,7 +287,7 @@ li li {font-size: 0.875em;}
 
 ul { 
     margin: 0;
-    padding: 24px 0 24px 24px;
+    padding: 12px 0 12px 24px;
 }
 
 ol { 
@@ -328,9 +328,9 @@ ol {
 
 .g_divider {
     border-top: solid 1px rgba(225, 223, 233, 1);
-    -moz-border-image: -moz-linear-gradient(left, rgba(225, 223, 233, 1) 0%, rgba(225, 223, 233, 0) 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, rgba(225, 223, 233, 1) 0%, rgba(225, 223, 233, 0) 100%);
-    border-image: linear-gradient(to right, rgba(225, 223, 233, 1) 0%, rgba(225, 223, 233, 0) 100%);
+    -moz-border-image: -moz-linear-gradient(left, rgba(225, 223, 233, 0) 25%, rgba(225, 223, 233, 1) 50%, rgba(225, 223, 233, 0) 75%);
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(225, 223, 233, 0) 25%, rgba(225, 223, 233, 1) 50%, rgba(225, 223, 233, 0) 75%);
+    border-image: linear-gradient(to right, rgba(225, 223, 233, 0) 25%, rgba(225, 223, 233, 1) 50%, rgba(225, 223, 233, 0) 75%);
     border-image-slice: 1;
     margin: 48px 0px;
 }
@@ -779,11 +779,11 @@ ol {
 
 .ap_divider {
     border-top: solid 1px rgba(225, 223, 233, 1);
-    -moz-border-image: -moz-linear-gradient(left, rgba(225, 223, 233, 1) 0%, rgba(225, 223, 233, 0) 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, rgba(225, 223, 233, 1) 0%, rgba(225, 223, 233, 0) 100%);
-    border-image: linear-gradient(to right, rgba(225, 223, 233, 1) 0%, rgba(225, 223, 233, 0) 100%);
+    -moz-border-image: -moz-linear-gradient(left, rgba(225, 223, 233, 0) 25%, rgba(225, 223, 233, 1) 50%, rgba(225, 223, 233, 0) 75%);
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(225, 223, 233, 0) 25%, rgba(225, 223, 233, 1) 50%, rgba(225, 223, 233, 0) 75%);
+    border-image: linear-gradient(to right, rgba(225, 223, 233, 0) 25%, rgba(225, 223, 233, 1) 50%, rgba(225, 223, 233, 0) 75%);
     border-image-slice: 1;
-    margin: 0;
+    margin: 24px 0;
 }
 
 .ap_quote {
@@ -1112,6 +1112,62 @@ ol {
     height: 48%;
 }
 
+.cs_prototypeCont {
+    display: none;
+    margin: -48px 0;
+    position: relative;
+    width: 399px;
+    height: 805px;
+    left: 50%;
+    -moz-transform: scale(0.8, 0.8) translateX(-50%); 
+    -webkit-transform: scale(0.8, 0.8) translateX(-50%); 
+    -o-transform: scale(0.8, 0.8) translateX(-50%);
+    -ms-transform: scale(0.855, 0.8) translateX(-50%);
+    transform: scale(0.8, 0.8) translateX(-50%); 
+    -moz-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.cs_prototypeCont iframe {
+    margin: 56px 0 0 11px;
+    position: absolute;
+    width: 375px;
+    height: 667px;
+    border: solid 1px #EEEEEE;
+    border-radius: 4px;
+}
+
+.cs_prototypeCont img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.cs_prototypeContMobile {
+    display: block;
+    margin: -108px 0;
+    left: 50%;
+    -moz-transform: scale(0.68, 0.68) translateX(-50%); 
+    -webkit-transform: scale(0.68, 0.68) translateX(-50%); 
+    -o-transform: scale(0.68, 0.68) translateX(-50%);
+    -ms-transform: scale(0.68, 0.68) translateX(-50%);
+    transform: scale(0.68, 0.68) translateX(-50%); 
+    -moz-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.cs_prototypeContMobile:hover {
+    opacity: 0.9;
+    margin-top: -112px;
+}
+
 /* ====== Animations ====== */
 
 .animateIn {
@@ -1336,7 +1392,9 @@ ol {
         margin: 12px 0 24px 0;
     }
 
+    .cs_prototypeCont {display: block;}
 
+    .cs_prototypeContMobile {display: none;}
 
 @media only screen and (min-width: 663px) {
     .hp_headerLogo {margin: -36px 0 0 12px;}
