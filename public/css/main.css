@@ -299,6 +299,8 @@ ol {
     padding: 24px 0 24px 18px;
 }
 
+.g_textAlignCentre {text-align: center;}
+
 .g_codeSnippet {
     font-family: "Courier", monospace;
     font-size: 1em;
@@ -365,7 +367,7 @@ ol {
 
 .footerCont {
     width: calc(100% - 48px);
-    background: #F1F0F3;
+    background: #F6F6F8;
     padding: 48px 24px 36px 24px;
     text-align: center;
     float: left;
@@ -391,7 +393,7 @@ ol {
 .hp_page {
     width: 100%;
     margin-top: 100vh;
-    background-color: #FCFBFD;
+    background-color: #FDFEFF;
     position: relative;
     z-index: 1;
     float: left;
@@ -818,7 +820,7 @@ ol {
     width: 100%;
     margin-top: 50vh;
     padding-bottom: 48px;
-    background-color: #FCFBFD;
+    background-color: #FDFEFF;
     position: relative;
     z-index: 1;
     float: left;
@@ -875,8 +877,16 @@ ol {
 
 .cs_articleFullWidthImg {
     width: 100%;
-    margin: 12px 0 24px 0;
+    margin: 36px 0 48px 0;
     border-radius: 4px;
+}
+
+.cs_articleFixedWidthImg {
+    margin: 48px auto;
+    width: 224px;
+    height: auto;
+    display: block;
+    text-align: center;
 }
 
 .cs_articleFullWidthVideo {
@@ -929,7 +939,7 @@ ol {
     margin: 0 0 12px 0;
     width: 100%;
     min-height: 100px;
-    background: #ffffff;
+    background: #FDFEFF;
     box-shadow: 0 1px 3px 0 #E6E5E9;
     border-radius: 4px;
     overflow: auto;
@@ -945,6 +955,7 @@ ol {
 
 .cs_caseStudyCard:hover {
     box-shadow: 0 4px 4px 0 #E6E5E9; 
+    background: #FFFFFF;
     text-decoration: none;
     transform: translateY(-2px);
 }
@@ -1172,6 +1183,45 @@ ol {
     margin-top: -112px;
 }
 
+.cs_personaListItem {
+    margin: 36px 0;
+    position: relative;
+}
+
+
+.cs_personaListItem img {
+    width: 96px;
+    height: 96px;
+    margin-right: 24px;
+    float: left;
+}
+
+.cs_personaListItem p {
+    position: absolute;
+    display: inline-block;
+    width: calc(100% - 128px);
+    margin-bottom: 0px;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cs_lwfJobsList {margin: 48px 0;}
+
+.cs_lwfJobsList div {
+    width: 100%;
+    height: 32px;
+    color: #ffffff;
+    background: #243F95;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 6px;
+    float: left;
+}
+
 /* ====== Animations ====== */
 
 .animateIn {
@@ -1387,6 +1437,7 @@ ol {
         display: inline-block;
         margin: 36px 12px 12px 0;
         width: calc(50% - 6px);
+        box-shadow: 0 0 0 0 #FFF; 
     }
     
     .cs_caseStudyCard: first-of-type {margin: 36px 0 12px 0;}
@@ -1401,6 +1452,11 @@ ol {
     .cs_prototypeCont {display: block;}
 
     .cs_prototypeContMobile {display: none;}
+
+    .cs_lwfJobsList div {
+        width: calc(50% - 6px);
+        margin: 0 6px 6px 0;
+    }
 
 @media only screen and (min-width: 663px) {
     .hp_headerLogo {margin: -36px 0 0 12px;}
