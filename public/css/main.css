@@ -520,11 +520,10 @@ ol {
     color: #000519;
     margin: 0 0 12px 0;
     font-size: 2em;
-    margin: 24px 12px;
+    margin: 36px 12px;
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    float: left;
     width: 100%;
 }
 
@@ -535,56 +534,111 @@ ol {
 .hp_card {
     margin: 0 12px 12px 12px;
     width: calc(100% - 24px);
-    background: #ffffff;
-    border-radius: 4px;
-    overflow: hidden;
+    height: calc(48vw + 24px);
+    max-height: 429px;
     display: block;
     transition: all 0.3s ease;
-    box-shadow: 0 1px 3px 0 #E6E5E9;
+    position: relative;
+    margin-bottom: 36px;
 }
 
-.hp_card:hover {
-    box-shadow: 0 4px 4px 0 #E6E5E9;
-    text-decoration: none;
-    transform: translateY(-2px);
+.hp_cardShadow {
+    position: absolute;
+    top: 24px;
+    border-radius: 4px;
+    width: calc(100% - 24px);
+    height: 48vw;
+    max-height: 357px;
+    background: #F5F9FC;
+    transition: all 0.3s ease;
 }
+
+.hp_cardShadowIOP {background: #F9F7F5;}
+
+.hp_cardShadowFLV {background: #F7F5FE;}
+
+.hp_cardShadowSICC {background: #F0F7F2;}
+
+.hp_card:nth-of-type(odd) .hp_cardShadow {left: 24px;}
 
 .hp_cardImage {
-    width: 100%;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 24px);
     height: 48vw;
+    max-height: 357px;
     object-fit: cover;
     background: #A6A2AE;
     transition: all 0.3s ease;
-    border-radius: 0 0 4px 4px;
+    border-radius: 4px;
 }
+
+.hp_card:nth-of-type(even) .hp_cardImage {margin-left: 24px;}
 
 .hp_card:hover .hp_cardImage {
     filter: brightness(108%);
     transform: scale(1.005);
 }
 
+.hp_card:hover .hp_cardShadow {
+    filter: brightness(98%);
+    transform: scale(0.99);
+}
+
 .hp_cardCont {
-    width: 100%;
-    position: relative;
-    height: 64px;
-    text-align: center;
+    position: absolute;
+    margin: 0 12px;
+    padding: 12px 16px;
+    bottom: 12px;
+    width: 50%;
+    left: 0;
+    background: #ffffff;
+    border-radius: 4px;
+    display: block;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px 0 #E6E5E9;
+    box-sizing: border-box;
+}
+
+.hp_card:nth-of-type(odd) .hp_cardCont {left: unset; right: 0px;}
+
+.hp_card:hover .hp_cardCont {
+    box-shadow: 0 4px 4px 0 #E6E5E9;
+    text-decoration: none;
+    transform: translateY(-2px);
 }
 
 .hp_cardTitle {
     font-family: "NotoSans", sans-serif;
     font-weight: 600;
-    font-size: 0.875em;
+    font-size: 0.75em;
     line-height: 1.5em;
-    color: #766E87;
-    width: calc(100% - 24px);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    letter-spacing: 0.09px;
+    color: #000;
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.hp_cardCTA {
+    font-family: "NotoSans", sans-serif;
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 0.75em;
+    color: #4A90E2;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hp_cardCTA::after {
+    content: "►";
+    font-size: 0.5em;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+..hp_cardCTA:hover .hp_cardCTA::after {margin-left: 8px;}
 
 /* Contact block */
 
@@ -628,9 +682,7 @@ ol {
 
 .hp_contactFormCopyCont {position: relative;}
 
-.hp_contactForm33 {
-    width: 100%;
-}
+.hp_contactForm33 {width: 100%;}
 
 .hp_contactFormCopyInput {
     width: calc(100% - 56px);
@@ -930,7 +982,6 @@ ol {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 
 /* Case study cards */
 
@@ -1428,6 +1479,11 @@ ol {
 
     .hp_headerContChild {width: calc(100% - 96px);}
 
+    .hp_cardTitle {
+        font-size: 0.875em;
+        line-height: 1.5em;
+    }
+
     .cs_sidebarFacts {
         width: calc(100% - 48px);
         padding: 24px;
@@ -1468,6 +1524,35 @@ ol {
     }
 
     .hp_teamCont:nth-child(2n + 1) {margin-right: 0;}
+
+    .hp_card {
+        margin: 0 24px 12px 24px;
+        width: calc(100% - 48px);
+        height: calc(48vw + 48px);
+        max-height: 405px;
+        margin-bottom: 64px;
+    }
+    
+    .hp_cardShadow {
+        top: 48px;
+        width: calc(100% - 48px);
+    }
+    
+    .hp_card:nth-of-type(odd) .hp_cardShadow {left: 48px;}
+    
+    .hp_cardImage {width: calc(100% - 48px);}
+    
+    .hp_card:nth-of-type(even) .hp_cardImage {margin-left: 48px;}
+
+    .hp_cardCont {
+        margin: 0 24px;
+        padding: 16px;
+        bottom: 24px;
+        width: 33%;
+    }
+
+    .hp_cardTitle {
+        font-size: 1em;}
 
     .cs_page {margin-top: 460px;}
 
@@ -1542,16 +1627,22 @@ ol {
         margin: 0 8px 12px 0;
     }
 
-    .hp_card {
-        margin: 0 12px 12px 12px;
-        width: calc(50% - 20px);
-        display: inline-block;
-        float: left;
-    }  
+    .hp_cardCont {padding: 24px;}
 
-    .hp_card:nth-child(2n+1) {margin: 0 12px 12px 0px;}
-     
-    .hp_cardImage {height: 272px;}
+    .hp_cardTitle {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+    .hp_cardCTA {
+        margin-top: 24px;
+        font-size: 0.875em;
+    }
+    
+    .hp_cardCTA::after {
+        font-size: 0.7em;
+        margin-left: 6px;
+    }
 
     .hp_contactForm33 {
         width: 33%;
@@ -1572,7 +1663,6 @@ ol {
     .hideMobile {display: inline-block!important;}
 
     .cs_headerImage {height: 60vw;}
-
 
     .cs_articleFullWidthVideo {
         width: 100%;
