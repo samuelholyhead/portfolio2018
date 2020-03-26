@@ -633,7 +633,7 @@ ol {
 
 .hp_cardCTA::after {
     content: "►";
-    font-size: 0.5em;
+    font-size: 8px;
     margin-left: 5px;
     transition: all 0.3s ease;
 }
@@ -1640,7 +1640,7 @@ ol {
     }
     
     .hp_cardCTA::after {
-        font-size: 0.7em;
+        font-size: 11px;
         margin-left: 6px;
     }
 
