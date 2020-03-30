@@ -1,6 +1,20 @@
 @font-face {
   font-family: 'NotoSans';
   font-style: normal;
+  font-weight: 400;
+  src: local('NotoSans Regular'), local('NotoSans-Regular'), url('../fonts/NotoSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('NotoSans Italic'), local('NotoSans-Italic'), url('../fonts/NotoSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
   font-weight: 600;
   src: local('NotoSans SemiBold'), local('NotoSans-SemiBold'), url('../fonts/NotoSans-SemiBold.ttf') format('truetype');
 }

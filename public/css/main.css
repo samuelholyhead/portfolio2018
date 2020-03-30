@@ -146,7 +146,7 @@ textarea {
 
 .g_navBarLink {
     font-family: "NotoSans", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1em;
     color: #FFFFFF;
     line-height: 47px;
@@ -376,6 +376,7 @@ ol {
 }
 
 .footerCont p {
+    font-size: 0.6875rem;
     color: #837D91;
 }
 
@@ -450,7 +451,7 @@ ol {
     color: #ffffff;
     font-family: "NotoSans", sans-serif;
     font-size: 0.875em;
-    font-weight: 400;
+    font-weight: 600;
     transition: 0.3s all ease;
     float: left;
     opacity: 0;
@@ -516,11 +517,11 @@ ol {
 
 .hp_h1 {
     font-family: "NotoSans", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: #000519;
     margin: 0 0 12px 0;
     font-size: 2em;
-    margin: 36px 12px;
+    margin: 36px 24px;
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -821,11 +822,11 @@ ol {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 1em;
+    font-size: 0.825em;
     color: #7F849B;
     display: block;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 12px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: all 0.3s ease;
@@ -844,14 +845,36 @@ ol {
     margin: 24px 0;
 }
 
-.ap_quote {
-    color: #6A6E82;
-    font-weight: 400;
+.ap_testimonial {
+    padding-bottom: 18px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(230,229,233,1);
+    border-radius: 4px;
+    margin-top: 48px;
+    float: left;
 }
 
-.ap_quoteRight {
-    text-align: right;
-    margin: 48px 12px 48px 0;
+.ap_testimonial p {margin: 0 24px 8px 24px;}
+
+.ap_testimonialRef {
+    background: #F6F6F8;
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.ap_testimonialRef img {
+    margin: -48px auto 16px auto;
+    width: 96px;
+    height: 96px;
+}
+
+.ap_testimonialRef p {
+    font-family: "NotoSans", sans-serif;
+    font-weight: 300;
+    font-size: 0.875em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .g_alignRight {
@@ -902,6 +925,7 @@ ol {
     box-shadow: 0 1px 2px 0 rgba(230,229,233,1);
     border-radius: 4px;
     margin-bottom: 24px;
+    z-index: 11;
 }
 
 .cs_headerImage {
@@ -1634,6 +1658,7 @@ ol {
     }
     
     .hp_headerButton {
+        font-weight: 600;
         height: 44px;
         line-height: 44px;
         border-radius: 44px;
