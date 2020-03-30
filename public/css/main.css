@@ -376,7 +376,8 @@ ol {
 }
 
 .footerCont p {
-    font-size: 0.6875rem;
+    font-size: 0.6875em;
+    line-height: 1em;
     color: #837D91;
 }
 
