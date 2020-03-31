@@ -377,7 +377,7 @@ ol {
 
 .footerCont p {
     font-size: 0.6875em;
-    line-height: 1em;
+    line-height: 1.75em;
     color: #837D91;
 }
 
@@ -522,7 +522,7 @@ ol {
     color: #000519;
     margin: 0 0 12px 0;
     font-size: 2em;
-    margin: 36px 24px;
+    margin: 36px 12px;
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -778,7 +778,7 @@ ol {
     position: absolute;
     top: 20%;
     left: 25%;
-    transform: translate(-50px,-50px);
+    transform: translate(-50px, -50px);
 }
 
 .ap_blockMargins {
@@ -852,6 +852,7 @@ ol {
     box-shadow: 0 1px 2px 0 rgba(230,229,233,1);
     border-radius: 4px;
     margin-top: 48px;
+    margin-bottom: 24px;
     float: left;
 }
 
@@ -1555,6 +1556,8 @@ ol {
 
 @media only screen and (min-width: 663px) {
     .hp_headerLogo {margin: -36px 0 0 12px;}
+
+    .hp_h1 {margin-left: 24px}
 
     .hp_teamCont {
         width: calc(50% - 6px);
