@@ -104,7 +104,7 @@ textarea {
 
 .hideSmallMobile {display: none!important;}
 
-.showSmallMobile {display: block!important;}
+.showSmallMobile {display: inline-block!important;}
 
 .g_navBar {
     position: absolute;
@@ -544,6 +544,24 @@ ol {
     margin-bottom: 36px;
 }
 
+.hp_cardDisabled {cursor: not-allowed;}
+
+.hp_cardDisabledNotice {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 8px 12px 8px 9px;
+    display: block;
+    font-family: "NotoSans", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.75em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgba(7,6,30,0.64);
+    border-radius: 4px;
+}
+
 .hp_cardShadow {
     position: absolute;
     top: 24px;
@@ -558,6 +576,8 @@ ol {
 .hp_cardShadowIOP {background: #F9F7F5;}
 
 .hp_cardShadowFLV {background: #F7F5FE;}
+
+.hp_cardShadowLWF {background: #F5F7FB;}
 
 .hp_cardShadowSICC {background: #F0F7F2;}
 
@@ -577,14 +597,25 @@ ol {
 
 .hp_card:nth-of-type(even) .hp_cardImage {margin-left: 24px;}
 
+
 .hp_card:hover .hp_cardImage {
     filter: brightness(108%);
     transform: scale(1.005);
 }
 
+.hp_cardDisabled:hover .hp_cardImage {
+    filter: brightness(96%);
+    transform: none;
+}
+
 .hp_card:hover .hp_cardShadow {
     filter: brightness(98%);
     transform: scale(0.99);
+}
+
+.hp_cardDisabled:hover .hp_cardShadow {
+    filter: none;
+    transform: none;
 }
 
 .hp_cardCont {
@@ -608,6 +639,11 @@ ol {
     box-shadow: 0 4px 4px 0 #E6E5E9;
     text-decoration: none;
     transform: translateY(-2px);
+}
+
+.hp_cardDisabled:hover .hp_cardCont {
+    box-shadow: 0 1px 3px 0 #E6E5E9;
+    transform: none;
 }
 
 .hp_cardTitle {
@@ -640,7 +676,11 @@ ol {
     transition: all 0.3s ease;
 }
 
-..hp_cardCTA:hover .hp_cardCTA::after {margin-left: 8px;}
+.hp_cardCTA:hover .hp_cardCTA::after {margin-left: 8px;}
+
+.hp_cardCTA_disabled {color: #747475;}
+
+.hp_cardCTA_disabled::after {content: "";}
 
 /* Contact block */
 
@@ -1341,12 +1381,12 @@ ol {
 
 @-webkit-keyframes animateInHome {
     from {margin-top: 48px; opacity: 0}
-    to {margin-top: 24px; opacity: 1}
+    to {margin-top: 36px; opacity: 1}
 }
 
 @keyframes animateInHome {
-    from {margin-top: 48px; opacity: 0}
-    to {margin-top: 24px; opacity: 1}
+    from {margin-top: 60px; opacity: 0}
+    to {margin-top: 36px; opacity: 1}
 }
 
 @-webkit-keyframes animateInSidebar {
@@ -1574,6 +1614,11 @@ ol {
         max-height: 405px;
         margin-bottom: 64px;
     }
+
+    .hp_cardDisabledNotice {
+        top: 24px;
+        right: 24px;
+    }
     
     .hp_cardShadow {
         top: 48px;
@@ -1590,7 +1635,7 @@ ol {
         margin: 0 24px;
         padding: 16px;
         bottom: 24px;
-        width: 33%;
+        width: 34%;
     }
 
     .hp_cardTitle {
@@ -1669,6 +1714,8 @@ ol {
         padding: 0 16px;
         margin: 0 8px 12px 0;
     }
+
+    .hp_cardDisabledNotice {font-size: 0.875em;}
 
     .hp_cardCont {padding: 24px;}
 
