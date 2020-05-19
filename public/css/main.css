@@ -165,18 +165,21 @@ textarea {
 
 .g_1600FullWidth {
     width: 100%;
+    width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
     max-width: 1600px;
     margin: 0 auto;
 }
 
 .g_1024FullWidth {
     width: 100%;
+    width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
     max-width: 1048px;
     margin: 0 auto;
 }
 
 .g_600FullWidth {
     width: 100%;
+    width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
     max-width: 600px;
     margin: 0 auto;
 }
@@ -420,6 +423,7 @@ ol {
 
 .hp_headerContChild {
     width: calc(100% - 24px);
+    /*width: calc(100% - 24px - env(safe-area-inset-left) - env(safe-area-inset-right));*/
     max-width: 1024px;
     position: absolute; 
     z-index: 1;
@@ -1681,6 +1685,7 @@ ol {
     .g_navBarLogo {
         top: 50px;
         left: 12px;
+        left: calc(12px + env(safe-area-inset-left));
         width: 207px;
         height: 28px;
     }
@@ -1689,6 +1694,8 @@ ol {
         line-height: 55px;
         margin-right: 24px;
     }
+
+    .g_navBarLink:nth-last-of-type(3) {margin-right: calc(24px + env(safe-area-inset-right));}
 
     .g_33block {
         width: calc(33% - 16px);
