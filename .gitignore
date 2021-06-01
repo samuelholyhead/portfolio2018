@@ -10,4 +10,14 @@
 /.cache
 .*.cache
 
+.firebase
+#firebase
+/.firebase
+.*.firebase
+
+.production/2020/*
+production/2020/*
+
+.production/2021/*
+production/2021/*
 
