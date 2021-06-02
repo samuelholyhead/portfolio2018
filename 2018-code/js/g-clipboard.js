@@ -14,14 +14,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			var x = document.getElementById("copyDesktopCallFeedback");
 			copyFeedback(x); });}
 
+	if (document.getElementById("copyMobileEmail") != null) {
+		document.getElementById("copyMobileEmail").addEventListener("click", function() {
+			var x = document.getElementById("copyMobileEmailFeedback");
+			copyFeedback(x); });}
+
+	if (document.getElementById("copyMobileCall") != null) {
+		document.getElementById("copyMobileCall").addEventListener("click", function() {
+			var x = document.getElementById("copyMobileCallFeedback");
+			copyFeedback(x); });}
 });
 
 function copyFeedback(feedbackDiv) {
 
-	feedbackDiv.src = "img/ui_copy_feedback.svg";
+	feedbackDiv.src = "img/ui-copy-successful.svg";
 
 	setTimeout(function() {
-		feedbackDiv.src = "img/ui_copy.svg";
+		feedbackDiv.src = "img/ui-copy.svg";
 	}, 1500);
 }
 

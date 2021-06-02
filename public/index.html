@@ -18,12 +18,13 @@
         <link rel="stylesheet" href="css/fontface.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grid.css">
 
         <link rel="canonical" href="https://www.samuelholyhead.com">
 
         <!-- Title -->
-        <meta property="og:title" content="Samuel Holyhead – Designer / Lecturer / Front-end developer">
-        <meta name="twitter:title" value="Samuel Holyhead – Designer / Lecturer / Front-end developer">
+        <meta property="og:title" content="Samuel Holyhead – Digital product designer">
+        <meta name="twitter:title" value="Samuel Holyhead – Digital product designer">
         <!-- Description -->
         <meta name="description" content="Sam Holyhead is a London-based UX/UI designer, associate lecturer and front-end developer.">
         <meta property="og:description" content="Sam Holyhead is a London-based UX/UI designer, associate lecturer and front-end developer.">
@@ -34,8 +35,8 @@
         <!-- Site Name -->
         <meta property="og:site_name" content="Samuel Holyhead">
         <!-- Image -->
-        <meta property="og:image" content="http://www.samuelholyhead.com/img/home/metaImage.jpg">
-        <meta name="twitter:image" content="http://www.samuelholyhead.com/img/home/metaImage.jpg">
+        <meta property="og:image" content="http://www.samuelholyhead.com/img/metaImage.jpg">
+        <meta name="twitter:image" content="http://www.samuelholyhead.com/img/metaImage.jpg">
         
         <meta name="twitter:card" content="summary_large_image">
 
@@ -53,9 +54,6 @@
             }
           }
         </script>
-
-        <script src="./js/navbar-home.js"></script>
-        <script src="./js/home-header.js"></script>
         <script src="./js/plugins.js"></script>
         <script src="./js/g-clipboard.js"></script>
         <script src="./js/clipboard.min.js"></script>
@@ -68,136 +66,259 @@
 
         <!-- Add your site or application content here -->
 
-
-        <div class="g_navBar g_navBarBG" id="navBar">
-            <a href="index.html">
-                <img class="g_navBarLogo" src="./img/sh-logo.svg" alt="Amphio"/>
-                <img class="g_navBarLogomark" src="./img/sh-logo-mark.svg" alt="Amphio"/>
-            </a>
-            <a class="g_navBarLink" href="index.html#get-in-touch">Get In Touch</a>
-            <a class="g_navBarLink" href="about.html">About <span class="hideMobile">Me</span></a> 
-            <a class="g_navBarLink" href="index.html#our-work">My Work</a> 
-        </div>
-
-        <div class="hp_headerCont" id="hp_headerCont">
-            <div class="hp_headerContChild">
-                <div class="hp_headerH1 animateFade" id="headerText">Welcome! What skills do you need?</div>
-                <a class="hp_headerButton" href="iop-sprints.html">UX Design</a>
-                <a class="hp_headerButton" href="iop-sprints.html">Workshops & Sprints</a>
-                <a class="hp_headerButton" href="iop-sprints.html">Prototyping</a>
-                <a class="hp_headerButton" href="henle.html">UI Design</a>
-                <a class="hp_headerButton" style="clear: left;" href="flv.html">Graphic Design</a>
-                <a class="hp_headerButton" href="sicc.html">Front-end Development</a>
-                <a class="hp_headerButton" href="about.html">Who am I?</a>
-                <a class="hp_headerButton" href="index.html#get-in-touch">Contact Details</a>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-10 col-sm-11 col-xs-12">
+                  <img class="logo_image" src="./img/logo.svg" alt=""/>
+                </div>
             </div>
-        </div>
 
-        <div class="hp_page">
-            <div class="g_1024FullWidth">
+            <div class="row justify-end">
+                <div class="col col-4 col-sm-6 col-xs-12">
+                  
+                  <p>Freelance designer experienced in user&nbsp;research, product strategy, prototyping, and interface design.</p>
+                  <a class="g_listButton" href="#clients">
+                    View previous clients
+                    <svg class="g_listButton_icon" width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.872026 7.21598L4.85603 10.688L4.85603 0.815979L6.74403 0.815979V10.688L10.728 7.21598V10.096L5.80003 14.48L0.872026 10.096V7.21598Z" fill="#FFAA97"/>
+                    </svg>
+                  </a>
 
-                <a name="our-work" class="hp_h1 animateInHome">Case studies</a>
+                  <a class="g_listButton" href="#contact">
+                    Get in touch
+                    <svg class="g_listButton_icon" width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.872026 7.21598L4.85603 10.688L4.85603 0.815979L6.74403 0.815979V10.688L10.728 7.21598V10.096L5.80003 14.48L0.872026 10.096V7.21598Z" fill="#FFAA97"/>
+                    </svg>
+                  </a>
+                </div>
+            </div>
 
-                <div>
-                    
-    
-                    <a class="hp_card" href="iop-sprints.html">
-                        <div class="hp_cardShadow hp_cardShadowIOP"></div>
-                        <img class="hp_cardImage" src="./img/iop-sprints/headerImg@2x.jpg" alt=""/>
-                        <div class="hp_cardCont">
-                            <div class="hp_cardTitle">Running design sprints with the Institute of&nbsp;Physics</div>
-                            <div class="hp_cardCTA hideSmallMobile">Read more</div>
-                        </div>
-                    </a>
-
-                    <a class="hp_card hp_cardDisabled">
-                        <div class="hp_cardShadow hp_cardShadowLWF"></div>
-                        <img class="hp_cardImage" src="./img/lwf/headerImg@2x.jpg" alt=""/>
-                        <div class="hp_cardCont">
-                            <div class="hp_cardTitle">Helping people find new jobs on Learn with Facebook</div>
-                            <div class="hp_cardCTA hp_cardCTA_disabled hideSmallMobile">Please contact for access</div>
-                        </div>
-                        <div class="hp_cardDisabledNotice">&#128274;&nbsp;&nbsp;Locked<span class="showSmallMobile">&nbsp;– contact for access</span></div>
-                    </a>
-
-                    <a class="hp_card" href="henle.html">
-                        <div class="hp_cardShadow hp_cardShadowHenle"></div>
-                        <img class="hp_cardImage" src="./img/henle/headerImg@2x.jpg" alt=""/>
-                        <div class="hp_cardCont">
-                            <div class="hp_cardTitle">Redesigning the Henle Library for&nbsp;Android</div>
-                            <div class="hp_cardCTA hideSmallMobile">Read more</div>
-                        </div>
-                    </a>
-    
-                    <a class="hp_card" href="flv.html">
-                        <div class="hp_cardShadow hp_cardShadowFLV"></div>
-                        <img class="hp_cardImage" src="./img/flv/headerImg@2x.jpg" alt=""/>
-                        <div class="hp_cardCont">
-                            <div class="hp_cardTitle">Designing a game for Fondation Louis&nbsp;Vuitton</div>
-                            <div class="hp_cardCTA hideSmallMobile">Read more</div>
-                        </div>
-                    </a>
-
-                    
-    
-                    <a class="hp_card" href="sicc.html">
-                        <div class="hp_cardShadow hp_cardShadowSICC"></div>
-                        <img class="hp_cardImage" src="./img/sicc/headerImg@2x.jpg" alt=""/>
-                        <div class="hp_cardCont">
-                            <div class="hp_cardTitle">Developing the South India Coffee Company website</div>
-                            <div class="hp_cardCTA hideSmallMobile">Read more</div>
-                        </div>
-                    </a>
+            <div id="clients" class="row justify-start">
+                <div class="col col-12 g_margin164">
+                  <h1>Previous clients</h1>
+                </div>
+            </div>
+            <div class="row justify-centre">    
+                <div class="col col-1 col-sm-1 col-xs-3">
+                    <img class="" src="./img/ho_logo.svg" alt=""/>
+                </div>
+                <div class="col col-3 col-sm-5 col-xs-8 g_margin128">
+                  <h2>Home office</h2>
+                  <p>Interaction designer during a beta phase to develop an e&#8209;learning service (GDS).<br><br></p>
                 </div>
 
-                <!-- <a class="hp_card" href="iop-events.html">
-                    <img class="hp_cardImage" src="./img/iop-events/homeHeader.jpg" alt=""/>
-                    <div class="hp_cardCont">
-                        <div class="hp_cardTitle">Institute of Physics Events: A flagship project to teach agile&nbsp;development</div>
-                    </div>
-                </a>
+                <div class="col col-1 col-sm-1 col-xs-3">
+                    <img class="g_margin8" src="./img/mca_logo.svg" alt=""/>
+                </div>
+                <div class="col col-3 col-sm-5 col-xs-8 g_margin128">
+                  <h2>Maritime and coastguard agency</h2>
+                  <p>Lead service designer during an alpha phase exploring seafarer examinations (GDS).<br><br></p>
+                </div>
 
-                <a class="hp_card" href="amphio.html">
-                    <img class="hp_cardImage" src="./img/amphio/homeHeader.jpg" alt=""/>
-                    <div class="hp_cardCont">
-                        <div class="hp_cardTitle">Rebranding from Touchpress to&nbsp;Amphio</div>
-                    </div>
-                </a> -->
+                <div class="col col-1 col-sm-1 col-xs-3">
+                    <img class="g_margin64" src="./img/nike_logo.svg" alt=""/>
+                </div>
+                <div class="col col-3 col-sm-5 col-xs-8 g_margin128">
+                  <h2>Nike</h2>
+                  <p>Pilot for a rapid fulfilment service and UX design for other unannounced projects.<br><br></p>
+                </div>
+            
+                <div class="col col-1 col-sm-1 col-xs-3">
+                    <img class="g_margin32" src="./img/roche_logo.svg" alt=""/>
+                </div>
+                <div class="col col-3 col-sm-5 col-xs-8 g_margin128">
+                  <h2>Roche</h2>
+                  <p>Developing a cross platform conversational assistant to help people with diabetes.<br><br></p>
+                </div>
 
+                <div class="col col-1 col-sm-1 col-xs-3">
+                    <img class="g_margin16" src="./img/google_logo.svg" alt=""/>
+                </div>
+                <div class="col col-3 col-sm-5 col-xs-8 g_margin128">
+                  <h2>Google</h2>
+                  <p>UX designer on the Local Opportunity Finder an internal discovery project.<br><br></p>
+                </div>
+
+                <div class="col col-1 col-sm-1 col-xs-3">
+                    <img class="" src="./img/shu_logo.svg" alt=""/>
+                </div>
+                <div class="col col-3 col-sm-5 col-xs-8 g_margin128">
+                  <h2>Sheffield Hallam University</h2>
+                  <p>Associate lecturer teaching Service, UX, and UI design to final year students on the BA (Hons) Graphic Design course.<br><br></p>
+                </div>
             </div>
+
+            <div class="row justify-centre">    
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://about.facebook.com">
+                        <img class="img_partner_logo" src="./img/facebook_logo.svg" alt="Facebook"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.hsbc.co.uk">
+                        <img class="img_partner_logo" src="./img/hsbc_logo.svg" alt="HSBC"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.warnermedia.com">
+                        <img class="img_partner_logo" src="./img/warner_logo.svg" alt="WarnerMedia"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.gsk.com/">
+                        <img class="img_partner_logo" src="./img/gsk_logo.svg" alt="GlaxoSmithKline"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.nhs.uk">
+                        <img class="img_partner_logo" src="./img/nhs_logo.svg" alt="NHS"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.bbc.co.uk">
+                        <img class="img_partner_logo" src="./img/bbc_logo.svg" alt="BBC"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.gov.uk/government/organisations/hm-revenue-customs">
+                        <img class="img_partner_logo" src="./img/hmrc_logo.svg" alt="Her Majesty’s Revenue and Customs"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.colgate.com/en-us">
+                        <img class="img_partner_logo" src="./img/colgate_logo.svg" alt="Colgate"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.britishmuseum.org">
+                        <img class="img_partner_logo" src="./img/british_museum_logo.svg" alt="The British Museum"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.juilliard.edu">
+                        <img class="img_partner_logo" src="./img/juilliard_logo.svg" alt="The Juilliard School"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.dazeddigital.com">
+                        <img class="img_partner_logo" src="./img/dazed_logo.svg" alt="Dazed and Confused"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.faber.co.uk">
+                        <img class="img_partner_logo" src="./img/faber_logo.svg" alt="Faber & Faber"/>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.iop.org">
+                        <img class="img_partner_logo" src="./img/iop_logo.svg" alt="The Institute of Physics"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.natureguides.com">
+                        <img class="img_partner_logo" src="./img/natureguides_logo.svg" alt="NatureGuides"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.barefootbooks.com">
+                        <img class="img_partner_logo" src="./img/barefoot_logo.svg" alt="Barefoot Books"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.comicrelief.com">
+                        <img class="img_partner_logo" src="./img/comic_relief_logo.svg" alt="Comic Relief"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.fondationlouisvuitton.fr/en">
+                        <img class="img_partner_logo" src="./img/flv_logo.svg" alt="Fondation Louis Vuitton"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.sicc.coffee">
+                        <img class="img_partner_logo" src="./img/sicc_logo.svg" alt="The South India Coffee Company"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.capgemini.com">
+                        <img class="img_partner_logo" src="./img/capgemini_logo.svg" alt="Capgemini"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.cxpartners.co.uk">
+                        <img class="img_partner_logo" src="./img/cxpartners_logo.svg" alt="cxPartners"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.rehabagency.ai">
+                        <img class="img_partner_logo" src="./img/rehab_logo.svg" alt="Rehab"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://en.wikipedia.org/wiki/Touchpress">
+                        <img class="img_partner_logo" src="./img/touchpress_logo.svg" alt="Touchpress"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://www.tengio.com">
+                        <img class="img_partner_logo" src="./img/tengio_logo.svg" alt="Tengio"/>
+                    </a>
+                </div>
+                <div class="col col-2 col-sm-4 col-xs-6">
+                    <a href="https://coxy1989.com/amphio/index.html">
+                        <img class="img_partner_logo" src="./img/amphio_logo.svg" alt="Amphio"/>
+                    </a>
+                </div>
+            </div>
+
+            <div id="contact" class="row g_margin196">
+                <div class="col col-12">
+                    <h1>Get in touch</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-1 col-sm-1 col-xs-2"></div>
+                <div class="col col-6 col-m-5 col-sm-11 col-xs-9">
+                    <p>Are you interested in working together? Want to learn about my past projects? Or maybe just fancy a chat?</p>
+                    <p>If so, please send me an email or give me a call!</p>
+                </div>
+
+                <div class="col col-0 col-sm-1 col-xs-0 g_margin32"></div>
+                <div class="col col-5 col-m-6 col-sm-8 col-xs-12">
+                   
+                        <div class="hp_contactFormCopyCont">
+                            <input class="hp_contactFormCopyInput" id="desktopEmailLink" type="text" name="email" value="samuel.holyhead@gmail.com" readOnly>
+                            <button class="hp_contactFormCopyButton" id="copyDesktopEmail" data-clipboard-target="#desktopEmailLink">
+                                <img id="copyDesktopEmailFeedback" src="img/ui_copy.svg" alt=""/>
+                            </button>
+                        </div>
+            
+                       
+                        <div class="hp_contactFormCopyCont">
+                            <input class="hp_contactFormCopyInput hp_contactFormCopyInputCall" id="desktopCallLink" type="text" name="phone"   value="+44 (0) 7889 201 979" readOnly>
+                            <button class="hp_contactFormCopyButton" id="copyDesktopCall" data-clipboard-target="  #desktopCallLink">
+                                <img id="copyDesktopCallFeedback" src="img/ui_copy.svg" alt=""/>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
         
-            <a class="hp_contactFormCont" name="get-in-touch">
-                <div class="g_1024FullWidth">
-                        <h4 class="hp_contactFormTitle">Interested in working together?</h4>
-                        <p>For enquiries about design or engineering work or if you would just like chat, get in touch via email or phone!</p>
-                        <div class="hp_contactForm33">
-                            <h5>Email</h5>
-                                <div class="hp_contactFormCopyCont">
-                                    <input class="cs_contactFormCopyInput" id="desktopEmailLink" type="text" name="email" value="samuel.holyhead@gmail.com" readOnly>
-                                    <button class="cs_contactFormCopyButton" id="copyDesktopEmail" data-clipboard-target="#desktopEmailLink">
-                                        <img id="copyDesktopEmailFeedback" src="img/ui-copy.svg" alt=""/>
-                                    </button>
-                                </div>
-                            </div>
-                        <div class="hp_contactForm33">
-                            <h5>Call</h5>
-                            <div class="hp_contactFormCopyCont">
-                                <input class="cs_contactFormCopyInput" id="desktopCallLink" type="text" name="phone"   value="+44 7889 201 979" readOnly>
-                                <button class="cs_contactFormCopyButton" id="copyDesktopCall" data-clipboard-target="  #desktopCallLink">
-                                    <img id="copyDesktopCallFeedback" src="img/ui-copy.svg" alt=""/>
-                                </button>
-                            </div>
-                        </div>
-                    
+    <div class="footerCont g_margin256">
+        <div class="container">   
+            <div class="row justify-center">
+                <div class="col col-10 col-xs-12">
+                    <p>© 2021 Samuel Holyhead. All rights reserved.</p>
+                    <p>This website has been build according to the principles of Progressive Enchancement. It collects no personal information, nor does it pass on your personal information to any third-party services.</p>
+                    <p>Typeset in <a class="gtSuper" href="https://www.gt-super.com">GT Super</a> and <a class="gtFlexa" href="https://www.gt-flexa.com">GT Flexa</a>.</p>
                 </div>
-            </a>
+            </div>
         </div>
-
-        <div class="footerCont">
-            <p>© 2020 Samuel Holyhead. All rights reserved.</p>
-            <p>This website has been build according to the principles of Progressive Enchancement. It collects no personal information, nor does it pass on your personal information to any third party services.</p>
-            <p>Typeset in <a href="http://sorkintype.com/fonts.html#mw">Merriweather</a> and <a href="https://www.google.com/get/noto/">Noto Sans</a>.</p>
-        </div>
+    </div>
     </body>
 </html>
 
