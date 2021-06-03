@@ -268,7 +268,6 @@ a:hover, a:active {
     cursor: pointer;
 }
 
-
 .footerCont {
     padding: 48px 0 24px 0;
     background: #142A46;
@@ -382,7 +381,7 @@ a:hover, a:active {
 
     .hp_contactFormCopyInput {font-size: 1.1875em;}
 
-    .hp_contactFormCopyInput {width: calc(100% - 18px);}
+    .hp_contactFormCopyInput {width: calc(95% - 18px);}
     .hp_contactFormCopyInputCall {width: calc(75% - 18px);}
 }
 

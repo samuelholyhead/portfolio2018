@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	console.log("case-study-page.js DOMContentLoaded");
 	
-	var clipboard = new ClipboardJS('.cs_contactFormCopyButton');
+	var clipboard = new ClipboardJS('.hp_contactFormCopyButton');
 
 	if (document.getElementById("copyDesktopEmail") != null) {
 		document.getElementById("copyDesktopEmail").addEventListener("click", function() {
