@@ -240,7 +240,7 @@ a {
 }
 
 .hp_contactFormCopyInput {
-    width: calc(100% - 18px);
+    /*width: calc(100% - 18px);*/
     padding: 0 18px 0 18px;
     height: 3.5rem;
     line-height: 3.5rem;
@@ -251,7 +251,7 @@ a {
     font-family: GT Flexa, Helvetica, sans-serif;
     font-style: normal;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -377,18 +377,16 @@ a {
         margin: 0 0 0.5em 0;
     }
 
-    
-
     .logo_image {margin: 96px 0 24px 0;}
 
     .img_partner_logo {margin: 24px 0 0 0;}
 
     .hp_contactFormCopyInput {
         font-size: 1.1875em;
-        width: 80%;
+        /*width: 80%;*/
     }
 
-    .hp_contactFormCopyInputCall {width: 65%;}
+    ./*hp_contactFormCopyInputCall {width: 65%;}*/
 }
 
 
@@ -415,13 +413,14 @@ a {
     }
 
     a:hover, a:active {text-decoration: underline;}
-    
+
     .g_listButton:hover .g_listButton_icon {padding: 0.25em 1em 0 0;}
 
     .hp_contactFormCopyInput {
         font-size: 1.1875em;
         width: calc(95% - 18px);
         color: #fff;
+        font-weight: 400;
     }
 
     .hp_contactFormCopyInputCall {width: calc(75% - 18px);}
