@@ -99,6 +99,10 @@ textarea {
 
 /* ====== Global ====== */
 
+.showMobile {display: inline-block!important;}
+
+.hideMobile {display: none!important;}
+
 body {
     background-color: #112338;
     background: linear-gradient(306.43deg, #0D1B2B 26.85%, #10233A 57.71%, #142A46 100%), #112338;
@@ -150,9 +154,7 @@ a {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a:hover, a:active {
-    text-decoration: underline;
-}
+
 
 .g_margin256 {
     margin-top: 256px;
@@ -245,7 +247,7 @@ a:hover, a:active {
     border: none;
     border-radius: 1.75rem;
     background: #1D3553;
-    color: #fff;
+    color: #FFAA97;
     font-family: GT Flexa, Helvetica, sans-serif;
     font-style: normal;
     font-size: 1em;
@@ -375,39 +377,54 @@ a:hover, a:active {
         margin: 0 0 0.5em 0;
     }
 
+    a:hover, a:active {text-decoration: underline;}
+
     .logo_image {margin: 96px 0 24px 0;}
 
     .img_partner_logo {margin: 24px 0 0 0;}
 
-    .hp_contactFormCopyInput {font-size: 1.1875em;}
+    .hp_contactFormCopyInput {
+        font-size: 1.1875em;
+        width: 80%;
+    }
 
-    .hp_contactFormCopyInput {width: calc(95% - 18px);}
-    .hp_contactFormCopyInputCall {width: calc(75% - 18px);}
+    .hp_contactFormCopyInputCall {width: 65%;}
 }
 
 
 @media only screen and (min-width: 768px) {
-     .logo_image {margin: 164px 0 0 0;}
+
+    .showMobile {display: none!important;}
+
+    .hideMobile {display: inline-block!important;}
+
+    .logo_image {margin: 164px 0 0 0;}
 
      
-     .img_partner_logo:hover {
+    .img_partner_logo:hover {
          filter: brightness(115%);
          transform: scale(1.15);
-     }
+    }
      
 
-     .g_listButton:hover {
+    .g_listButton:hover {
          background: #1D3553;
          text-decoration: none;
          padding: 1em 0 1em 1em;
          width: calc(100% - 1em);
-     }
+    }
 
      .g_listButton:hover .g_listButton_icon {padding: 0.25em 1em 0 0;}
 
-     
+    .hp_contactFormCopyInput {
+        font-size: 1.1875em;
+        width: calc(95% - 18px);
+        color: #fff;
+    }
 
-     .hp_contactFormCopyButton:hover, .hp_contactFormCopyButton:active {background: #535163;}
+    .hp_contactFormCopyInputCall {width: calc(75% - 18px);}
+     
+    .hp_contactFormCopyButton:hover, .hp_contactFormCopyButton:active {background: #535163;}
 }
 
 @media print,

@@ -30,7 +30,7 @@
   font-family: 'GT Super';
   font-style: bold;
   font-weight: 700;
-  src: local('GT Super Display Super'), local('GT-Super-Display-Super'), url('../fonts/GT-Super-Display-Super.woff2') format('woff2');
+  src: local('GT Super Text Black'), local('GT-Super-Display-Super'), url('../fonts/GT-Super-Display-Super.woff2') format('woff2');
 }
 
 @font-face {

@@ -283,20 +283,22 @@
                     <p>If so, please send me an email or give me a call!</p>
                 </div>
 
-                <div class="col col-0 col-sm-1 col-xs-0 g_margin32"></div>
-                <div class="col col-5 col-m-6 col-sm-8 col-xs-12">
+                <div class="col col-0 col-sm-1 col-xs-2 g_margin32"></div>
+                <div class="col col-5 col-m-6 col-sm-8 col-xs-10">
                    
                         <div class="hp_contactFormCopyCont">
-                            <input class="hp_contactFormCopyInput" id="desktopEmailLink" type="text" name="email" value="samuel.holyhead@gmail.com" readOnly>
-                            <button class="hp_contactFormCopyButton" id="copyDesktopEmail" data-clipboard-target="#desktopEmailLink">
+                            <input class="hp_contactFormCopyInput hideMobile" id="desktopEmailLink" type="text" name="email" value="hello@samuelholyhead.com" readOnly>
+                            <a class="hp_contactFormCopyInput showMobile" href="mailto:hello@samuelholyhead.com">hello@samuelholyhead.com</a>
+                            <button class="hp_contactFormCopyButton hideMobile" id="copyDesktopEmail" data-clipboard-target="#desktopEmailLink">
                                 <img id="copyDesktopEmailFeedback" src="img/ui_copy.svg" alt=""/>
                             </button>
                         </div>
             
                        
                         <div class="hp_contactFormCopyCont">
-                            <input class="hp_contactFormCopyInput hp_contactFormCopyInputCall" id="desktopCallLink" type="text" name="phone" value="+44 (0) 7889 201 979" readOnly>
-                            <button class="hp_contactFormCopyButton" id="copyDesktopCall" data-clipboard-target="#desktopCallLink">
+                            <input class="hp_contactFormCopyInput hp_contactFormCopyInputCall hideMobile" id="desktopCallLink" type="text" name="phone" value="+44 (0) 7889 201 979" readOnly>
+                            <a class="hp_contactFormCopyInput hp_contactFormCopyInputCall showMobile" href="tel:+447889201979">+44 (0) 7889 201 979</a>
+                            <button class="hp_contactFormCopyButton hideMobile" id="copyDesktopCall" data-clipboard-target="#desktopCallLink">
                                 <img id="copyDesktopCallFeedback" src="img/ui_copy.svg" alt=""/>
                             </button>
                         </div>
