@@ -147,11 +147,12 @@ p {
 }
 
 a {
-    color: #FFAA97;
-    text-decoration: none;
+    color: #FFAE9C;
     transition: all 0.3s ease;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    opacity: 1;
 }
 
 
@@ -223,7 +224,7 @@ a {
     -moz-osx-font-smoothing: grayscale;
     transition: all 0.3s ease;
     cursor: pointer;
-
+    text-decoration: none;
 }
 
 .g_listButton_icon {
@@ -255,6 +256,7 @@ a {
     text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
 }
 
 .hp_contactFormCopyButton {
