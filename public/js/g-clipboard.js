@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-
-	console.log("case-study-page.js DOMContentLoaded");
 	
 	var clipboard = new ClipboardJS('.hp_contactFormCopyButton');
 

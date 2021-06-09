@@ -2,6 +2,7 @@
   font-family: 'GT Flexa';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local('GT Flexa Extended Bold'), local('GT-Flexa-Extended-Bold'), url('../fonts/GT-Flexa-Extended-Bold.woff2') format('woff2');
 }
 
@@ -9,6 +10,7 @@
   font-family: 'GT Flexa';
   font-style: normal;
   font-weight: 500;
+  font-display: block;
   src: local('GT Flexa Standard Medium'), local('GT-Flexa-Standard-Medium'), url('../fonts/GT-Flexa-Standard-Medium.woff2') format('woff2');
 }
 
@@ -16,6 +18,7 @@
   font-family: 'GT Flexa';
   font-style: normal;
   font-weight: 400;
+  font-display: block;
   src: local('GT Flexa Standard Regular'), local('GT-Flexa-Standard-Regular'), url('../fonts/GT-Flexa-Standard-Regular.woff2') format('woff2');
 }
 
@@ -23,6 +26,7 @@
   font-family: 'GT Flexa';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: local('GT Flexa Standard Regular Italic'), local('GT-Flexa-Standard-Regular-Italic'), url('../fonts/GT-Flexa-Standard-Regular-Italic.woff2') format('woff2');
 }
 
@@ -30,6 +34,7 @@
   font-family: 'GT Super';
   font-style: bold;
   font-weight: 700;
+  font-display: swap;
   src: local('GT Super Text Black'), local('GT-Super-Display-Super'), url('../fonts/GT-Super-Display-Super.woff2') format('woff2');
 }
 
@@ -37,6 +42,7 @@
   font-family: 'GT Super';
   font-style: bold;
   font-weight: 600;
+  font-display: swap;
   src: local('GT Super Display Bold'), local('GT-Super-Display-Bold'), url('../fonts/GT-Super-Display-Bold.woff2') format('woff2');
 }
 
