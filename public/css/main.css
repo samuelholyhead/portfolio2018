@@ -153,6 +153,8 @@ a {
     -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
     opacity: 1;
+    text-decoration-thickness: 0.0625rem;
+    text-underline-offset: 0.2em;
 }
 
 

@@ -38,9 +38,15 @@
 <path d="M778.436 184.86C774.18 184.86 770.304 188.66 759.36 211.46L766.428 184.784L752.444 188.356L752.216 189.116L753.508 188.964C756.7 188.584 757.46 189.8 756.776 192.384L748.34 224H756.016L758.22 215.792C767.872 196.108 770.152 193.904 774.18 193.904C775.244 193.904 776.46 194.284 777.524 195.12H778.208L781.172 185.544C780.488 185.088 779.272 184.86 778.436 184.86Z" fill="#FDFEFF"/>
 <defs>
 <linearGradient id="paint0_linear" x1="262.406" y1="-30.4782" x2="577.827" y2="194.703" gradientUnits="userSpaceOnUse">
-<stop stop-color="#447EC6"/>
-<stop offset="0.5625" stop-color="#285D9D" stop-opacity="0.5"/>
-<stop offset="1" stop-color="#194173" stop-opacity="0"/>
+<stop offset="0" stop-color="#447EC6" stop-opacity="1">
+	<animate attributeName="stop-opacity" values="1; 0.35; 0;" dur="3s" fill="freeze"></animate>
+</stop>
+<stop offset="0.5" stop-color="#447EC6" stop-opacity="0.35">
+	<animate attributeName="stop-opacity" values="0.35; 0; 1; " dur="3s" fill="freeze"></animate>
+</stop>
+<stop offset="1" stop-color="#447EC6" stop-opacity="0">
+	<animate attributeName="stop-opacity" values="0; 1; 0.35;" dur="3s" fill="freeze"></animate>
+</stop>
 </linearGradient>
 </defs>
 </svg>
