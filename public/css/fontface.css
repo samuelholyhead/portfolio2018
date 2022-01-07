@@ -33,14 +33,6 @@
 @font-face {
   font-family: 'GT Super';
   font-style: bold;
-  font-weight: 700;
-  font-display: swap;
-  src: local('GT Super Text Black'), local('GT-Super-Display-Super'), url('../fonts/GT-Super-Display-Super.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'GT Super';
-  font-style: bold;
   font-weight: 600;
   font-display: swap;
   src: local('GT Super Display Bold'), local('GT-Super-Display-Bold'), url('../fonts/GT-Super-Display-Bold.woff2') format('woff2');
