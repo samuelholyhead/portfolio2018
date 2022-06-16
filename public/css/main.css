@@ -148,13 +148,13 @@ p {
 
 a {
     color: #FFAE9C;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-decoration: none;
+    text-decoration-color: #355172; 
     opacity: 1;
     text-decoration-thickness: 0.0625rem;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.3125em;
 }
 
 
@@ -416,7 +416,11 @@ a {
          width: calc(100% - 1em);
     }
 
-    a:hover, a:active {text-decoration: underline;}
+    a:hover, a:active {
+        text-decoration-color: #FFAE9C;
+        text-decoration-thickness: 0.125rem;
+        text-underline-offset: 0.25em;
+    }
 
     .g_listButton:hover .g_listButton_icon {padding: 0.25em 1em 0 0;}
 
