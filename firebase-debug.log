@@ -1,0 +1,92 @@
+[debug] [2023-01-24T17:21:01.401Z] ----------------------------------------------------------------------
+[debug] [2023-01-24T17:21:01.402Z] Command:       /Users/samuelholyhead/.nvm/versions/node/v19.4.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-01-24T17:21:01.403Z] CLI Version:   7.16.1
+[debug] [2023-01-24T17:21:01.403Z] Platform:      darwin
+[debug] [2023-01-24T17:21:01.403Z] Node Version:  v19.4.0
+[debug] [2023-01-24T17:21:01.403Z] Time:          Tue Jan 24 2023 17:21:01 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-24T17:21:01.403Z] ----------------------------------------------------------------------
+[debug] [2023-01-24T17:21:01.403Z] 
+[debug] [2023-01-24T17:21:01.412Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-24T17:21:01.413Z] > authorizing via signed-in user
+[debug] [2023-01-24T17:21:01.413Z] [iam] checking project portfolio2017-b2efb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-24T17:21:01.414Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2023-01-24T17:21:01.414Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2023-01-24T17:21:01.589Z] <<< HTTP RESPONSE 400
+[debug] [2023-01-24T17:21:01.591Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio2017-b2efb:testIamPermissions  
+
+[debug] [2023-01-24T17:21:02.220Z] <<< HTTP RESPONSE 401
+[debug] [2023-01-24T17:21:02.220Z] <<< HTTP RESPONSE BODY
+[debug] [2023-01-24T17:21:02.221Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-24T17:21:02.222Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2023-01-24T17:21:02.222Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2023-01-24T17:21:02.257Z] <<< HTTP RESPONSE 400
+[debug] [2023-01-24T17:21:02.258Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio2017-b2efb  
+ 
+[debug] [2023-01-24T17:21:02.355Z] <<< HTTP RESPONSE 401
+[debug] [2023-01-24T17:21:02.355Z] <<< HTTP RESPONSE BODY
+[debug] [2023-01-24T17:21:02.355Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-24T17:21:02.443Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:40:35)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (node:events:627:28)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to get Firebase project portfolio2017-b2efb. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-01-24T17:21:44.238Z] ----------------------------------------------------------------------
+[debug] [2023-01-24T17:21:44.240Z] Command:       /Users/samuelholyhead/.nvm/versions/node/v19.4.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-01-24T17:21:44.240Z] CLI Version:   7.16.1
+[debug] [2023-01-24T17:21:44.240Z] Platform:      darwin
+[debug] [2023-01-24T17:21:44.241Z] Node Version:  v19.4.0
+[debug] [2023-01-24T17:21:44.241Z] Time:          Tue Jan 24 2023 17:21:44 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-24T17:21:44.241Z] ----------------------------------------------------------------------
+[debug] [2023-01-24T17:21:44.241Z] 
+[debug] [2023-01-24T17:21:44.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-24T17:21:44.249Z] > authorizing via signed-in user
+[debug] [2023-01-24T17:21:44.249Z] [iam] checking project portfolio2017-b2efb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-24T17:21:44.251Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2023-01-24T17:21:44.252Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2023-01-24T17:21:44.405Z] <<< HTTP RESPONSE 400
+[debug] [2023-01-24T17:21:44.406Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio2017-b2efb:testIamPermissions  
+
+[debug] [2023-01-24T17:21:44.615Z] <<< HTTP RESPONSE 401
+[debug] [2023-01-24T17:21:44.615Z] <<< HTTP RESPONSE BODY
+[debug] [2023-01-24T17:21:44.616Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-24T17:21:44.617Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2023-01-24T17:21:44.617Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2023-01-24T17:21:44.651Z] <<< HTTP RESPONSE 400
+[debug] [2023-01-24T17:21:44.651Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio2017-b2efb  
+ 
+[debug] [2023-01-24T17:21:44.744Z] <<< HTTP RESPONSE 401
+[debug] [2023-01-24T17:21:44.744Z] <<< HTTP RESPONSE BODY
+[debug] [2023-01-24T17:21:44.744Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-24T17:21:44.829Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:40:35)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (node:events:627:28)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to get Firebase project portfolio2017-b2efb. Please make sure the project exists and your account has permission to access it.
